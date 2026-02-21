@@ -1,0 +1,224 @@
+/* ============================================
+   COMPONENT — Pricing Section
+   ============================================ */
+
+.pricing-section {
+  background: var(--card);
+}
+
+.pricing-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 80px;
+}
+
+.pricing-intro p { color: var(--muted); }
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Price card */
+.price-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 40px 32px;
+  position: relative;
+  transition: all var(--transition-slow);
+  overflow: hidden;
+}
+
+.price-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--border);
+  transition: background var(--transition-slow);
+}
+
+.price-card:hover {
+  border-color: rgba(255, 77, 28, 0.3);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.price-card:hover::before {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
+
+.price-card.featured {
+  background: linear-gradient(135deg, rgba(255,77,28,0.08), rgba(255,184,0,0.04));
+  border-color: rgba(255, 77, 28, 0.3);
+}
+
+.price-card.featured::before {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
+
+.featured-badge {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: var(--accent);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+}
+
+/* Price card content */
+.price-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.price-label.hot { color: var(--accent); }
+
+.price-plan {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.price-num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin: 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.price-num sup {
+  font-size: 1.5rem;
+  vertical-align: top;
+  margin-top: 12px;
+  display: inline-block;
+  color: var(--accent);
+}
+
+.price-num span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.price-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.price-feats {
+  list-style: none;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price-feats li {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.price-feats li::before {
+  content: '✓';
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.price-feats li.muted::before {
+  content: '—';
+  color: var(--border);
+}
+
+.price-feats li.muted { color: var(--muted); }
+
+/* Plan buttons */
+.btn-plan {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: none;
+  transition: all var(--transition-base);
+  letter-spacing: 0.02em;
+}
+
+.btn-plan.outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--white);
+}
+
+.btn-plan.outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-plan.solid {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-plan.solid:hover {
+  background: #ff6b42;
+  box-shadow: 0 12px 30px rgba(255, 77, 28, 0.4);
+}
+
+/* Comparison table */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 60px;
+}
+
+.compare-table th {
+  padding: 20px 24px;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.compare-table th:last-child { color: var(--accent); }
+
+.compare-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 0.88rem;
+  vertical-align: middle;
+}
+
+.compare-table tr:hover td { background: rgba(255, 255, 255, 0.02); }
+
+.yes          { color: #27C93F; font-size: 1.1rem; }
+.no           { color: rgba(255, 255, 255, 0.2); font-size: 1.1rem; }
+.check-accent { color: var(--accent); font-size: 1.1rem; }

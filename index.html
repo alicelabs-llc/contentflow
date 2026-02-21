@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContentFlow AI — Automatiza tu Agencia de Redes Sociales</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+    <nav>
+      <div class="logo">
+        <span class="logo-dot"></span>
+        ContentFlow<span style="color: var(--accent)">AI</span>
+      </div>
+      <div class="nav-links">
+        <a href="#arquitectura">Arquitectura</a>
+        <a href="#tecnologia">Tecnología</a>
+        <a href="#precios">Precios</a>
+        <a href="#vender">Cómo Vender</a>
+        <a href="#costos">Costos</a>
+      </div>
+      <button class="btn-nav">Obtener Demo →</button>
+    </nav>
+
+    <!-- ═══════════════════════════════════════
+       TICKER
+  ═══════════════════════════════════════ -->
+    <div class="ticker">
+      <div class="ticker-inner">
+        <span class="ticker-item"
+          >⚡ FLUX.1 Schnell <em>IA de imágenes</em></span
+        >
+        <span class="ticker-item"
+          >🔍 Tavily AI <em>búsqueda en tiempo real</em></span
+        >
+        <span class="ticker-item">☁️ Cloudinary <em>CDN global</em></span>
+        <span class="ticker-item">🧵 Threads API <em>oficial de Meta</em></span>
+        <span class="ticker-item">💬 GPT-4o <em>agente principal</em></span>
+        <span class="ticker-item"
+          >📱 Telegram <em>preview instantáneo</em></span
+        >
+        <!-- Duplicated for seamless loop -->
+        <span class="ticker-item"
+          >⚡ FLUX.1 Schnell <em>IA de imágenes</em></span
+        >
+        <span class="ticker-item"
+          >🔍 Tavily AI <em>búsqueda en tiempo real</em></span
+        >
+        <span class="ticker-item">☁️ Cloudinary <em>CDN global</em></span>
+        <span class="ticker-item">🧵 Threads API <em>oficial de Meta</em></span>
+        <span class="ticker-item">💬 GPT-4o <em>agente principal</em></span>
+        <span class="ticker-item"
+          >📱 Telegram <em>preview instantáneo</em></span
+        >
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+    <section class="hero" style="padding-top: 60px">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+
+      <div class="hero-tag">🚀 Producto SaaS listo para vender</div>
+      <h1>
+        Automatiza<br />
+        <em>6 redes</em><br />
+        <span class="outline">en 2 minutos</span>
+      </h1>
+      <p class="hero-sub">
+        Sistema de producción de contenido social completamente automatizado.
+        Una herramienta. Seis plataformas. Cero trabajo manual.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn-primary">Ver Demo en Vivo →</button>
+        <button class="btn-secondary">Ver Arquitectura ↓</button>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">2<span>min</span></div>
+          <div class="stat-label">De idea a post publicado</div>
+        </div>
+        <div>
+          <div class="stat-num">6<span>+</span></div>
+          <div class="stat-label">Plataformas simultáneas</div>
+        </div>
+        <div>
+          <div class="stat-num">$0.003</div>
+          <div class="stat-label">Por imagen generada</div>
+        </div>
+        <div>
+          <div class="stat-num">90<span>%</span></div>
+          <div class="stat-label">Reducción de tiempo</div>
+        </div>
+      </div>
+
+      <!-- Floating Mock UI Card -->
+      <div class="hero-visual">
+        <div class="mock-card">
+          <div class="mock-header">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <span class="mock-title">contentflow.ai — Dashboard</span>
+          </div>
+          <div class="mock-body">
+            <div class="mock-label">Prompt del usuario</div>
+            <div class="mock-prompt">
+              "Post sobre automatización con n8n para Instagram y LinkedIn"
+            </div>
+
+            <div class="mock-label">Plataformas activas</div>
+            <div class="mock-platforms">
+              <span class="platform-pill ig">Instagram</span>
+              <span class="platform-pill li">LinkedIn</span>
+              <span class="platform-pill tw">X</span>
+              <span class="platform-pill th">Threads</span>
+            </div>
+
+            <div class="mock-label">Generando contenido...</div>
+            <div class="mock-progress-row">
+              <div class="mock-progress-label">
+                <span>🤖 GPT-4o — Copy</span><span>100%</span>
+              </div>
+              <div class="mock-bar">
+                <div class="mock-fill" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="mock-progress-row">
+              <div class="mock-progress-label">
+                <span>🔍 Tavily — Investigación</span><span>100%</span>
+              </div>
+              <div class="mock-bar">
+                <div
+                  class="mock-fill"
+                  style="width: 100%; animation-delay: 0.3s"
+                ></div>
+              </div>
+            </div>
+            <div class="mock-progress-row">
+              <div class="mock-progress-label">
+                <span>⚡ FLUX.1 — Imagen</span><span>78%</span>
+              </div>
+              <div class="mock-bar">
+                <div
+                  class="mock-fill"
+                  style="width: 78%; animation-delay: 0.6s"
+                ></div>
+              </div>
+            </div>
+            <div class="mock-img">🎨</div>
+          </div>
+          <div class="mock-footer">
+            <span class="mock-status">Procesando FLUX.1 Schnell</span>
+            <span class="mock-time">~38 seg restantes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       ARQUITECTURA
+  ═══════════════════════════════════════ -->
+    <section class="arch-section" id="arquitectura">
+      <div class="section-tag">Arquitectura del producto</div>
+      <div class="arch-intro reveal">
+        <h2>Así funciona<br /><em>por dentro</em></h2>
+        <p>
+          Un sistema de 7 capas construido sobre n8n que combina agentes IA,
+          búsqueda web en tiempo real, generación de imágenes con FLUX.1 y
+          publicación directa a 6 plataformas.
+        </p>
+      </div>
+
+      <div class="arch-flow reveal">
+        <div class="arch-step">
+          <div class="arch-num">01</div>
+          <h3>Chat Input</h3>
+          <p>
+            El usuario escribe su idea en lenguaje natural. El sistema entiende
+            plataforma, tono y contexto.
+          </p>
+        </div>
+        <div class="arch-step">
+          <div class="arch-num">02</div>
+          <h3>Router Agent</h3>
+          <p>
+            GPT-4o analiza el prompt y rutealo al sub-workflow correcto según la
+            plataforma solicitada.
+          </p>
+        </div>
+        <div class="arch-step">
+          <div class="arch-num">03</div>
+          <h3>Prompt Builder</h3>
+          <p>
+            Carga prompt y schema desde Google Docs. Composición dinámica según
+            plataforma y marca.
+          </p>
+        </div>
+        <div class="arch-step">
+          <div class="arch-num">04</div>
+          <h3>Content Creator</h3>
+          <p>
+            GPT-4o-mini + Tavily genera JSON estructurado con post, hashtags,
+            CTA e imagen.
+          </p>
+        </div>
+      </div>
+
+      <div class="arch-flow reveal" style="margin-top: 0">
+        <div class="arch-step">
+          <div class="arch-num">05</div>
+          <h3>FLUX.1 Image</h3>
+          <p>
+            fal.ai genera imagen profesional en ~2 segundos. Se guarda en
+            Cloudinary + Google Drive.
+          </p>
+        </div>
+        <div class="arch-step">
+          <div class="arch-num">06</div>
+          <h3>Telegram Preview</h3>
+          <p>
+            Preview inmediato en móvil con imagen + contenido completo. Luego
+            email con botones de aprobación.
+          </p>
+        </div>
+        <div class="arch-step">
+          <div class="arch-num">07</div>
+          <h3>Publish & Archive</h3>
+          <p>
+            Publicación directa vía APIs oficiales. JSON completo archivado en
+            Google Drive para auditoría.
+          </p>
+        </div>
+        <div class="arch-step">
+          <div class="arch-num">→</div>
+          <h3>6 Plataformas</h3>
+          <p>
+            X/Twitter · Instagram · Facebook · LinkedIn · Threads · YouTube
+            Shorts (extensible).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       TECNOLOGÍA
+  ═══════════════════════════════════════ -->
+    <section id="tecnologia" style="background: var(--card)">
+      <div class="section-tag">Stack tecnológico v2.0</div>
+      <h2 class="reveal">Las mejores<br />herramientas del <em>mercado</em></h2>
+      <div class="tech-grid reveal">
+        <div class="tech-card">
+          <div class="tech-icon">⚡</div>
+          <div class="tech-name">fal.ai + FLUX.1 Schnell</div>
+          <div class="tech-desc">
+            El modelo de imagen IA más avanzado actualmente. ~2 segundos por
+            imagen, calidad fotorrealista, $0.003/imagen. Reemplaza
+            Pollinations.
+          </div>
+          <span class="tech-badge badge-new">Nuevo</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">☁️</div>
+          <div class="tech-name">Cloudinary CDN</div>
+          <div class="tech-desc">
+            Storage profesional con CDN global, URLs permanentes,
+            transformaciones automáticas de imagen. 25GB gratis. Reemplaza
+            imgbb.
+          </div>
+          <span class="tech-badge badge-new">Nuevo</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🔍</div>
+          <div class="tech-name">Tavily AI Search</div>
+          <div class="tech-desc">
+            Motor de búsqueda diseñado específicamente para agentes IA. Más
+            preciso y económico que SerpAPI. Plan gratuito disponible.
+          </div>
+          <span class="tech-badge badge-new">Nuevo</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🧵</div>
+          <div class="tech-name">Threads API Oficial</div>
+          <div class="tech-desc">
+            Implementación completa con la API oficial de Meta lanzada en 2024.
+            Flujo de 2 pasos: Container → Publish. Antes estaba vacío.
+          </div>
+          <span class="tech-badge badge-new">Implementado</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">📱</div>
+          <div class="tech-name">Telegram Preview</div>
+          <div class="tech-desc">
+            Preview inmediato en móvil con imagen + contenido completo antes de
+            la aprobación por email. Flujo de revisión mejorado.
+          </div>
+          <span class="tech-badge badge-new">Nuevo</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🐛</div>
+          <div class="tech-name">LinkedIn Bug Fix</div>
+          <div class="tech-desc">
+            El switch de ruteo tenía ="linkedin" con el signo = extra. El nodo
+            nunca publicaba en LinkedIn. Corregido definitivamente.
+          </div>
+          <span class="tech-badge badge-fix">Bug corregido</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🤖</div>
+          <div class="tech-name">GPT-4o Router</div>
+          <div class="tech-desc">
+            Agente principal con GPT-4o para decisiones de ruteo complejas.
+            Memoria de sesión con Window Buffer para contexto.
+          </div>
+          <span class="tech-badge badge-keep">Mantenido</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">📄</div>
+          <div class="tech-name">Google Docs Prompts</div>
+          <div class="tech-desc">
+            Prompts y schemas almacenados en Google Docs para edición sin
+            código. Control de versiones y acceso por equipo.
+          </div>
+          <span class="tech-badge badge-keep">Mantenido</span>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🔄</div>
+          <div class="tech-name">n8n Self-Workflow</div>
+          <div class="tech-desc">
+            Arquitectura que se llama a sí misma como sub-workflow. Un solo
+            flujo gestiona los 6 canales de forma elegante.
+          </div>
+          <span class="tech-badge badge-keep">Arquitectura</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       CLIENTES IDEALES
+  ═══════════════════════════════════════ -->
+    <section>
+      <div class="section-tag">Mercado objetivo</div>
+      <h2 class="reveal">¿A quién le <em>vendes</em> esto?</h2>
+      <div class="clients-grid reveal">
+        <div class="client-card">
+          <div class="client-icon">🍽️</div>
+          <div class="client-name">Restaurantes & Cafés</div>
+          <div class="client-desc">
+            Necesitan publicar diariamente pero no tienen equipo de marketing.
+            Alta recurrencia.
+          </div>
+          <div class="client-budget">💰 $200–400/mes</div>
+        </div>
+        <div class="client-card">
+          <div class="client-icon">🏠</div>
+          <div class="client-name">Inmobiliarias</div>
+          <div class="client-desc">
+            Gran volumen de propiedades para promocionar. Instagram + Facebook
+            son clave para ellos.
+          </div>
+          <div class="client-budget">💰 $400–800/mes</div>
+        </div>
+        <div class="client-card">
+          <div class="client-icon">🎓</div>
+          <div class="client-name">Coaches & Consultores</div>
+          <div class="client-desc">
+            LinkedIn es su canal principal. Necesitan contenido consistente de
+            alto valor.
+          </div>
+          <div class="client-budget">💰 $300–600/mes</div>
+        </div>
+        <div class="client-card">
+          <div class="client-icon">🛍️</div>
+          <div class="client-name">E-commerce & Retail</div>
+          <div class="client-desc">
+            Productos nuevos, promociones, temporadas. Alto volumen de posts
+            necesarios.
+          </div>
+          <div class="client-budget">💰 $400–700/mes</div>
+        </div>
+        <div class="client-card">
+          <div class="client-icon">💆</div>
+          <div class="client-name">Salud & Bienestar</div>
+          <div class="client-desc">
+            Clínicas, gimnasios, nutricionistas. Instagram es su canal
+            principal.
+          </div>
+          <div class="client-budget">💰 $250–500/mes</div>
+        </div>
+        <div class="client-card">
+          <div class="client-icon">⚖️</div>
+          <div class="client-name">Despachos & Firmas</div>
+          <div class="client-desc">
+            Abogados, contadores. LinkedIn y contenido de autoridad. Revisan
+            todo antes de publicar.
+          </div>
+          <div class="client-budget">💰 $500–900/mes</div>
+        </div>
+        <div class="client-card">
+          <div class="client-icon">🏨</div>
+          <div class="client-name">Hoteles & Turismo</div>
+          <div class="client-desc">
+            Alta demanda visual. Instagram + Threads. Contenido estacional
+            frecuente.
+          </div>
+          <div class="client-budget">💰 $400–800/mes</div>
+        </div>
+        <div class="client-card">
+          <div class="client-icon">🏗️</div>
+          <div class="client-name">Construcción & Diseño</div>
+          <div class="client-desc">
+            Portafolio visual. Necesitan diferenciarse. LinkedIn + Instagram
+            para proyectos.
+          </div>
+          <div class="client-budget">💰 $300–600/mes</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       CÓMO VENDER
+  ═══════════════════════════════════════ -->
+    <section
+      style="
+        background: linear-gradient(
+          180deg,
+          transparent,
+          rgba(255, 77, 28, 0.03),
+          transparent
+        );
+      "
+      id="vender"
+    >
+      <div class="section-tag">Estrategia comercial</div>
+      <div class="sell-grid">
+        <div>
+          <h2 class="reveal">Cómo <em>vender</em><br />este producto</h2>
+          <div class="sell-steps reveal">
+            <div class="sell-step">
+              <div class="sell-step-num">1</div>
+              <div>
+                <h4>Úsalo en tu propia marca 30 días</h4>
+                <p>
+                  Documenta todo: tiempo ahorrado, calidad del contenido,
+                  alcance. Construye prueba social real antes de venderlo.
+                </p>
+              </div>
+            </div>
+            <div class="sell-step">
+              <div class="sell-step-num">2</div>
+              <div>
+                <h4>Instala gratis para 2–3 negocios locales</h4>
+                <p>
+                  A cambio de testimonios en video y autorización de uso como
+                  caso de estudio. El mejor marketing es el resultado real.
+                </p>
+              </div>
+            </div>
+            <div class="sell-step">
+              <div class="sell-step-num">3</div>
+              <div>
+                <h4>Demo en vivo de 15 minutos</h4>
+                <p>
+                  Muestra el proceso completo: prompt → imagen → preview
+                  Telegram → publicado. El WOW factor cierra la venta solo.
+                </p>
+              </div>
+            </div>
+            <div class="sell-step">
+              <div class="sell-step-num">4</div>
+              <div>
+                <h4>Ofrece garantía de 30 días</h4>
+                <p>
+                  Si el cliente no está satisfecho en 30 días, devuelves el
+                  setup fee. Elimina la fricción de compra y casi nadie la
+                  activa.
+                </p>
+              </div>
+            </div>
+            <div class="sell-step">
+              <div class="sell-step-num">5</div>
+              <div>
+                <h4>Upsell: más plataformas y posts</h4>
+                <p>
+                  Empieza con Instagram. Luego vende LinkedIn, X y Threads como
+                  add-ons. El cliente crece, tú cobras más.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="sell-roi reveal">
+            <div class="roi-title">📊 Calculadora de ROI</div>
+            <div class="roi-row">
+              <span class="roi-label">1 cliente × $350/mes</span>
+              <span class="roi-val">$350</span>
+            </div>
+            <div class="roi-row">
+              <span class="roi-label">Costo operativo del sistema</span>
+              <span class="roi-val" style="color: var(--accent)">—$45</span>
+            </div>
+            <div class="roi-row">
+              <span class="roi-label">Margen por cliente</span>
+              <span class="roi-val green">$305/mes</span>
+            </div>
+            <div class="roi-divider"></div>
+            <div class="roi-row">
+              <span class="roi-label">5 clientes</span>
+              <span class="roi-val green">$1,525/mes</span>
+            </div>
+            <div class="roi-row">
+              <span class="roi-label">10 clientes</span>
+              <span class="roi-val green">$3,050/mes</span>
+            </div>
+            <div class="roi-row">
+              <span class="roi-label">20 clientes</span>
+              <span class="roi-val accent">$6,100/mes</span>
+            </div>
+            <div class="roi-divider"></div>
+            <div class="roi-row">
+              <span class="roi-label">Tiempo real (10 clientes)</span>
+              <span class="roi-val">~4 hrs/semana</span>
+            </div>
+            <div class="roi-row">
+              <span class="roi-label">Tarifa implícita por hora</span>
+              <span class="roi-val green">~$190/hr</span>
+            </div>
+            <p class="roi-note">
+              *Estimado conservador con plan básico. Con planes premium el
+              margen aumenta considerablemente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       PRECIOS
+  ═══════════════════════════════════════ -->
+    <section class="pricing-section" id="precios">
+      <div class="pricing-intro">
+        <div class="section-tag">Estructura de precios</div>
+        <h2 class="reveal">Elige tu<br /><em>modelo</em></h2>
+        <p>
+          Tres formas de monetizar el mismo producto. Puedes combinarlas según
+          el cliente.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <div class="price-label">Servicio mensual</div>
+          <div class="price-plan">Starter</div>
+          <div class="price-num"><sup>$</sup>249<span>/mes</span></div>
+          <div class="price-desc">
+            Para negocios locales pequeños que necesitan presencia básica en 1–2
+            redes.
+          </div>
+          <ul class="price-feats">
+            <li>2 plataformas (ej. Instagram + Facebook)</li>
+            <li>12 posts/mes (3 por semana)</li>
+            <li>Imágenes generadas con FLUX.1</li>
+            <li>Aprobación previa por email</li>
+            <li>Preview en Telegram</li>
+            <li>Reporte mensual de actividad</li>
+            <li class="muted">Sin LinkedIn ni Threads</li>
+            <li class="muted">Sin búsqueda web en tiempo real</li>
+          </ul>
+          <button class="btn-plan outline">Empezar →</button>
+        </div>
+
+        <div class="price-card featured reveal">
+          <span class="featured-badge">Más vendido</span>
+          <div class="price-label hot">✦ Servicio mensual</div>
+          <div class="price-plan">Professional</div>
+          <div class="price-num"><sup>$</sup>499<span>/mes</span></div>
+          <div class="price-desc">
+            Para empresas medianas que quieren dominar múltiples redes con
+            contenido de alta calidad.
+          </div>
+          <ul class="price-feats">
+            <li>5 plataformas completas</li>
+            <li>20 posts/mes + stories</li>
+            <li>FLUX.1 HD + Cloudinary CDN</li>
+            <li>Investigación web en tiempo real</li>
+            <li>Aprobación + preview instantáneo</li>
+            <li>Calendar editorial en Notion</li>
+            <li>Informe quincenal detallado</li>
+            <li>Soporte WhatsApp prioritario</li>
+          </ul>
+          <button class="btn-plan solid">Empezar →</button>
+        </div>
+
+        <div class="price-card reveal">
+          <div class="price-label">Licencia única</div>
+          <div class="price-plan">Agency License</div>
+          <div class="price-num"><sup>$</sup>1,497<span> único</span></div>
+          <div class="price-desc">
+            El workflow completo configurado para tu agencia. Gestiona todos tus
+            clientes con un solo sistema.
+          </div>
+          <ul class="price-feats">
+            <li>Instalación completa en tu n8n</li>
+            <li>Todas las plataformas activas</li>
+            <li>Configuración de credenciales</li>
+            <li>Google Docs con prompts base</li>
+            <li>Documentación técnica completa</li>
+            <li>Sesión de entrenamiento 2 hrs</li>
+            <li>30 días de soporte post-setup</li>
+            <li>Actualizaciones por 6 meses</li>
+          </ul>
+          <button class="btn-plan outline">Contactar →</button>
+        </div>
+      </div>
+
+      <!-- Comparison table -->
+      <div style="max-width: 1100px; margin: 80px auto 0" class="reveal">
+        <h3
+          style="
+            font-family: &quot;Syne&quot;, sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            text-align: center;
+          "
+        >
+          ContentFlow AI vs Alternativas
+        </h3>
+        <p
+          style="
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-bottom: 0;
+          "
+        >
+          Por qué vale la pena construir vs comprar herramientas en el mercado
+        </p>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Buffer / Hootsuite</th>
+              <th>Herramienta manual</th>
+              <th>ContentFlow AI ⚡</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Generación de copy con IA</td>
+              <td><span class="no">—</span></td>
+              <td><span class="no">—</span></td>
+              <td><span class="check-accent">✓</span></td>
+            </tr>
+            <tr>
+              <td>Imágenes IA por post</td>
+              <td><span class="no">—</span></td>
+              <td><span class="no">—</span></td>
+              <td><span class="check-accent">✓ FLUX.1</span></td>
+            </tr>
+            <tr>
+              <td>Búsqueda web en tiempo real</td>
+              <td><span class="no">—</span></td>
+              <td><span class="no">—</span></td>
+              <td><span class="check-accent">✓ Tavily</span></td>
+            </tr>
+            <tr>
+              <td>Personalizable sin límite</td>
+              <td><span class="no">—</span></td>
+              <td><span class="yes">✓</span></td>
+              <td><span class="check-accent">✓</span></td>
+            </tr>
+            <tr>
+              <td>Sin costo por asiento</td>
+              <td><span class="no">—</span></td>
+              <td><span class="yes">✓</span></td>
+              <td><span class="check-accent">✓</span></td>
+            </tr>
+            <tr>
+              <td>Threads API oficial</td>
+              <td><span class="no">—</span></td>
+              <td><span class="no">—</span></td>
+              <td><span class="check-accent">✓</span></td>
+            </tr>
+            <tr>
+              <td>Costo mensual estimado</td>
+              <td style="color: var(--accent)">$99–$599/mes</td>
+              <td style="color: var(--accent2)">$0 (pero horas)</td>
+              <td style="color: #27c93f">$20–$60/mes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       COSTOS
+  ═══════════════════════════════════════ -->
+    <section id="costos">
+      <div class="section-tag">Estructura de costos</div>
+      <h2 class="reveal">Qué gastos<br /><em>esperar</em></h2>
+      <div class="costs-grid reveal">
+        <div class="costs-col">
+          <h3>💸 Costos fijos mensuales</h3>
+          <div class="cost-item">
+            <span class="cost-name">n8n Self-Hosted (VPS básico)</span>
+            <span class="cost-price low">$5–20/mes</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">n8n Cloud (alternativa)</span>
+            <span class="cost-price med">$20–50/mes</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">Cloudinary (plan gratuito 25GB)</span>
+            <span class="cost-price free">$0</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">Tavily AI (plan gratuito)</span>
+            <span class="cost-price free">$0</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">Google Drive / Docs</span>
+            <span class="cost-price free">$0</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">Telegram Bot</span>
+            <span class="cost-price free">$0</span>
+          </div>
+          <div class="cost-total">
+            <span>Total fijo mínimo</span>
+            <span>$5–20/mes</span>
+          </div>
+        </div>
+
+        <div class="costs-col">
+          <h3>📊 Costos variables (por uso)</h3>
+          <div class="cost-item">
+            <span class="cost-name">OpenAI GPT-4o (agente router)</span>
+            <span class="cost-price low">~$2–8/mes</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">OpenAI GPT-4o-mini (content)</span>
+            <span class="cost-price free">~$1–3/mes</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">fal.ai FLUX.1 Schnell</span>
+            <span class="cost-price free">~$0.003/img</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">100 posts = 100 imágenes</span>
+            <span class="cost-price low">~$0.30</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">Google Drive extra storage</span>
+            <span class="cost-price free">~$0–3/mes</span>
+          </div>
+          <div class="cost-item">
+            <span class="cost-name">Gmail API</span>
+            <span class="cost-price free">$0</span>
+          </div>
+          <div class="cost-total">
+            <span>Total variable (10 clientes)</span>
+            <span>~$20–40/mes</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          margin-top: 48px;
+          padding: 32px;
+          background: rgba(255, 184, 0, 0.06);
+          border: 1px solid rgba(255, 184, 0, 0.2);
+          border-radius: 12px;
+        "
+        class="reveal"
+      >
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+          "
+        >
+          <span style="font-size: 1.5rem">💡</span>
+          <strong
+            style="font-family: &quot;Syne&quot;, sans-serif; font-size: 1rem"
+            >Costo total real para 10 clientes activos</strong
+          >
+        </div>
+        <p style="color: var(--muted); font-size: 0.9rem; max-width: 700px">
+          Con 10 clientes generando ~200 posts/mes totales, el costo operativo
+          completo del sistema es aproximadamente
+          <strong style="color: var(--accent2)">$45–$70/mes</strong>. Ingreso
+          bruto con plan Professional:
+          <strong style="color: #27c93f">$4,990/mes</strong>. Margen neto:
+          <strong style="color: #27c93f">~$4,920/mes (98.5%)</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       FINAL CTA
+  ═══════════════════════════════════════ -->
+    <section class="final-cta">
+      <div class="section-tag" style="margin: 0 auto 24px">Empieza hoy</div>
+      <h2 class="reveal">
+        ¿Listo para<br /><em>automatizar</em><br />tu agencia?
+      </h2>
+      <p class="reveal">
+        Descarga el workflow, configura las variables de entorno y publica tu
+        primer post automatizado en menos de 2 horas.
+      </p>
+      <div class="cta-row reveal">
+        <button class="btn-primary" style="font-size: 1rem; padding: 18px 48px">
+          Descargar Workflow →
+        </button>
+        <button
+          class="btn-secondary"
+          style="font-size: 1rem; padding: 18px 48px"
+        >
+          Agendar Demo
+        </button>
+      </div>
+      <div
+        style="
+          margin-top: 48px;
+          display: flex;
+          gap: 32px;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+        class="reveal"
+      >
+        <span style="font-size: 0.82rem; color: var(--muted)"
+          >✓ Sin suscripción obligatoria</span
+        >
+        <span style="font-size: 0.82rem; color: var(--muted)"
+          >✓ Código abierto sobre n8n</span
+        >
+        <span style="font-size: 0.82rem; color: var(--muted)"
+          >✓ Tus datos, tu servidor</span
+        >
+        <span style="font-size: 0.82rem; color: var(--muted)"
+          >✓ 30 días de garantía</span
+        >
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+    <footer>
+      <div class="logo">
+        <span class="logo-dot"></span>
+        ContentFlow<span style="color: var(--accent)">AI</span>
+      </div>
+      <div class="footer-right">
+        © 2026 AliceLabs LLC. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/* ============================================
+   COMPONENT — Clients / Target Market Section
+   ============================================ */
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 60px;
+}
+
+.client-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: all var(--transition-slow);
+}
+
+.client-card:hover {
+  border-color: rgba(255, 77, 28, 0.3);
+  transform: translateY(-2px);
+}
+
+.client-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.client-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.client-desc {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.client-budget {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: var(--accent2);
+  font-weight: 500;
+}

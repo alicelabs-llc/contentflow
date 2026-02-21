@@ -1,0 +1,43 @@
+/* ============================================
+   CONTENTFLOW AI — Design Tokens / Variables
+   ============================================ */
+
+:root {
+  /* Colors */
+  --black:   #080810;
+  --white:   #F2F0EC;
+  --cream:   #EDE8DF;
+  --accent:  #FF4D1C;
+  --accent2: #FFB800;
+  --muted:   #8A8A9A;
+  --card:    #0F0F1A;
+  --border:  rgba(255, 255, 255, 0.07);
+  --glass:   rgba(255, 255, 255, 0.04);
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Spacing */
+  --section-padding:        120px 60px;
+  --section-padding-mobile: 80px 30px;
+
+  /* Border Radius */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-full: 100px;
+
+  /* Shadows */
+  --shadow-card:  0 60px 120px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--border);
+  --shadow-hover: 0 40px 80px rgba(0, 0, 0, 0.3);
+  --shadow-btn:   0 20px 40px rgba(255, 77, 28, 0.3);
+  --shadow-glow:  0 0 30px rgba(255, 77, 28, 0.4);
+
+  /* Transitions */
+  --transition-fast:   0.15s ease;
+  --transition-base:   0.25s ease;
+  --transition-slow:   0.3s ease;
+  --transition-reveal: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}

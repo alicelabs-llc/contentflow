@@ -1,0 +1,251 @@
+/* ============================================
+   COMPONENT — How to Sell Section
+   ============================================ */
+
+.sell-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.sell-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sell-step {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-slow);
+}
+
+.sell-step:hover {
+  border-color: rgba(255, 77, 28, 0.3);
+  background: rgba(255, 77, 28, 0.04);
+}
+
+.sell-step-num {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 77, 28, 0.1);
+  border: 1px solid rgba(255, 77, 28, 0.3);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.sell-step h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.sell-step p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ROI Calculator */
+.sell-roi {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  position: sticky;
+  top: 100px;
+}
+
+.roi-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+}
+
+.roi-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.roi-row:last-of-type { border-bottom: none; }
+.roi-label { color: var(--muted); }
+
+.roi-val {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.roi-val.green  { color: #27C93F; }
+.roi-val.accent { color: var(--accent); font-size: 1.2rem; }
+
+.roi-divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  margin: 20px 0;
+}
+
+.roi-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 16px;
+  font-style: italic;
+}
+
+
+/* ============================================
+   COMPONENT — Costs Section
+   ============================================ */
+
+.costs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.costs-col h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.88rem;
+}
+
+.cost-name  { color: var(--muted); }
+
+.cost-price { font-family: var(--font-display); font-weight: 600; }
+.cost-price.free { color: #27C93F; }
+.cost-price.low  { color: var(--accent2); }
+.cost-price.med  { color: var(--accent); }
+
+.cost-total {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  border-top: 1px solid var(--accent);
+}
+
+
+/* ============================================
+   COMPONENT — Final CTA Section
+   ============================================ */
+
+.final-cta {
+  text-align: center;
+  padding: 160px 60px;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,77,28,0.08) 0%, transparent 70%);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta h2 {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  margin-bottom: 20px;
+}
+
+.final-cta p {
+  color: var(--muted);
+  max-width: 500px;
+  margin: 0 auto 48px;
+  font-size: 1.05rem;
+}
+
+.cta-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* ============================================
+   COMPONENT — Buttons (Global)
+   ============================================ */
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  padding: 16px 36px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: none;
+  transition: all var(--transition-base);
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-primary:hover {
+  background: #ff6b42;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-btn);
+}
+
+.btn-secondary {
+  color: var(--white);
+  background: transparent;
+  padding: 16px 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: none;
+  transition: all var(--transition-base);
+}
+
+.btn-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: var(--glass);
+}
+
+
+/* ============================================
+   COMPONENT — Footer
+   ============================================ */
+
+footer {
+  padding: 40px 60px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .logo { font-size: 1rem; }
+
+.footer-right {
+  font-size: 0.78rem;
+  color: var(--muted);
+}

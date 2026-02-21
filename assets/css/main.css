@@ -1,0 +1,29 @@
+/* ============================================
+   CONTENTFLOW AI — Main CSS Entry Point
+   ============================================
+   Import order matters. Variables first,
+   then reset, then utilities, then components.
+   ============================================ */
+
+/* 1. Design Tokens */
+@import url('./utilities/variables.css');
+
+/* 2. Reset & Base */
+@import url('./utilities/reset.css');
+
+/* 3. Animations */
+@import url('./utilities/animations.css');
+
+/* 4. Components */
+@import url('./components/cursor.css');
+@import url('./components/nav.css');
+@import url('./components/ticker.css');
+@import url('./components/hero.css');
+@import url('./components/architecture.css');
+@import url('./components/technology.css');
+@import url('./components/clients.css');
+@import url('./components/pricing.css');
+@import url('./components/sections.css');
+
+/* 5. Responsive (always last) */
+@import url('./utilities/responsive.css');

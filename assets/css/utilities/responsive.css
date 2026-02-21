@@ -1,0 +1,47 @@
+/* ============================================
+   CONTENTFLOW AI — Responsive / Media Queries
+   ============================================ */
+
+@media (max-width: 1024px) {
+  /* Nav */
+  nav { padding: 16px 30px; }
+  .nav-links { display: none; }
+
+  /* Hero */
+  .hero { padding: 120px 30px 60px; }
+  .hero-visual { display: none; }
+  .hero-stats { gap: 30px; flex-wrap: wrap; }
+
+  /* Sections */
+  section { padding: var(--section-padding-mobile); }
+
+  /* Architecture */
+  .arch-flow { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .arch-flow::before { display: none; }
+
+  /* Tech grid */
+  .tech-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Pricing */
+  .pricing-grid { grid-template-columns: 1fr; max-width: 500px; }
+
+  /* Sell */
+  .sell-grid { grid-template-columns: 1fr; }
+
+  /* Clients */
+  .clients-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Costs */
+  .costs-grid { grid-template-columns: 1fr; }
+
+  /* Footer */
+  footer { flex-direction: column; gap: 16px; text-align: center; }
+}
+
+@media (max-width: 600px) {
+  .clients-grid { grid-template-columns: 1fr; }
+  .arch-flow { grid-template-columns: 1fr; }
+  .tech-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .hero-stats { flex-direction: column; gap: 20px; }
+}

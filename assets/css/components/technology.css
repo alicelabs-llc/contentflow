@@ -1,0 +1,58 @@
+/* ============================================
+   COMPONENT — Technology Stack Section
+   ============================================ */
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.tech-card {
+  background: var(--card);
+  padding: 32px;
+  transition: background var(--transition-slow);
+}
+
+.tech-card:hover {
+  background: rgba(255, 77, 28, 0.05);
+}
+
+.tech-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.tech-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.tech-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Badges */
+.tech-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.badge-new  { background: rgba(255,77,28,0.15);  color: var(--accent); border: 1px solid rgba(255,77,28,0.3); }
+.badge-fix  { background: rgba(39,201,63,0.12);   color: #27C93F;       border: 1px solid rgba(39,201,63,0.3); }
+.badge-keep { background: rgba(255,255,255,0.06); color: var(--muted);  border: 1px solid var(--border); }
