@@ -1,61 +1,40 @@
-<div align="center">
+# ContentFlow — consulta de piloto editorial
 
-# ContentFlow AI
-**Landing page for a social media automation agency**
+Landing comercial editable para un servicio de planificación y producción de contenido por propuesta. Conserva la marca y dirección visual de ContentFlow, con una oferta limitada a un piloto acordado.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-238636?style=flat-square)](LICENSE)
-[![HTML](https://img.shields.io/badge/HTML5-Vanilla-E34F26?style=flat-square&logo=html5)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+## Lo que funciona
 
-A high-quality marketing landing page for ContentFlow AI — a social media content automation service. Built with vanilla HTML, CSS, and JS. No framework dependencies.
+- Información del servicio, alcance y preguntas frecuentes.
+- Muestra editorial descargable en CSV, sin registro.
+- Brief validado que prepara un correo a `contacto@alicelabs.site`, dirección existente en CONTRIBUTING.md.
+- Copia manual del borrador como alternativa al cliente de correo.
+- Diseño móvil, teclado, contenido visible sin JavaScript y contacto alternativo.
 
-Built by [AliceLabs LLC](https://alicelabs.site)
+No incluye backend, envío de correos, cobros, generación por IA ni publicación en redes. La pantalla editorial es una muestra explícita. No se afirma que existan integraciones o clientes pagos.
 
-</div>
+## Verificar y compilar
 
----
+Node.js 22; sin dependencias de instalación.
 
-## What it includes
-
-- Custom animated cursor
-- Sticky navigation
-- Hero section with animated ticker
-- Architecture/how-it-works section
-- Pricing section
-- Client logos section
-- Technology stack section
-- Fully responsive (mobile-first)
-
-## Tech stack
-
-- HTML5
-- CSS3 (modular, component-based structure)
-- Vanilla JavaScript
-- Google Fonts (Syne + DM Sans)
-
-## Quick start
-
-No build step required. Just open `index.html` in your browser or serve with any static server:
-
-```bash
-npx serve .
+```sh
+npm test
+npm run build
+python3 -m http.server 8080 --directory dist
 ```
 
-## File structure
+Publicar únicamente `dist/`. El build copia una lista explícita de archivos públicos; deja fuera el diseño histórico de `legacy/`, los estilos antiguos y documentación interna. Los enlaces relativos permiten alojamiento en una subruta.
 
-```
-contentflow/
-├── index.html
-└── assets/
-    ├── css/
-    │   ├── main.css
-    │   ├── components/    # nav, hero, pricing, etc.
-    │   └── utilities/     # reset, animations, responsive
-    └── js/
-        ├── main.js
-        ├── cursor.js
-        └── scroll.js
-```
+## Antes de publicar
 
----
+Confirmar recepción del buzón, responsable de atender consultas y condiciones reales del servicio. Acordar cantidad de piezas, formatos, plazo, revisiones, precio y condiciones antes de contratar. El formulario no envía información hasta que el visitante la envíe desde su correo; no tiene analítica ni persistencia local.
 
-© 2026 AliceLabs LLC · [alicelabs.site](https://alicelabs.site)
+## Archivos
+
+- `index.html`: oferta y contenido público.
+- `assets/site.css`: diseño actual sin fuentes externas.
+- `assets/inquiry.mjs`: validación y creación de borrador.
+- `assets/site.mjs`: interacción, copia y reinicio al editar.
+- `downloads/calendario-ejemplo.csv`: muestra editable.
+- `legacy/index.html`: copia histórica para referencia; sus promesas y precios no son oferta vigente.
+
+El código mantiene la licencia MIT. No se desplegó ni se envió ninguna consulta como parte de esta reestructuración.
