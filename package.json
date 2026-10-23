@@ -1,0 +1,1 @@
+{"name":"contentflow-pilot","private":true,"type":"module","scripts":{"build":"node tools/build.mjs","test":"node --test test/*.test.mjs"}}
